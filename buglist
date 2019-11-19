@@ -1,0 +1,24 @@
+Test 1: Newly created Queue is empty---------------------------------------------> PASSED
+Test 2: ~Queue() deletes all entries in the queue--------------------------------> FAILED
+Test 3: isEmpty() returns true when queue is empty-------------------------------> PASSED
+Test 4: isEmpty() returns false when queue has elements--------------------------> PASSED
+Test 5: Enqueing a value makes the Queue not empty-------------------------------> PASSED
+Test 6: Enqueue adds element to the back of the queue----------------------------> FAILED
+Test 7: Enqueue 5 on empty queue then peekFront returns 5------------------------> PASSED
+Test 8: Dequeue queue of 1 element empties the queue-----------------------------> PASSED
+Test 9: Dequeue removes the front of the queue in a queue with multiple elements-> FAILED
+Test 10: Dequeue an empty list throws an error-----------------------------------> PASSED
+Test 11: peekFront() returns front of 1 element queue----------------------------> PASSED
+Test 12: peekFront() returns front of multi-element queue------------------------> FAILED
+Test 13: peekFront() throws error if queue is empty------------------------------> PASSED
+
+
+
+
+analysis:
+  -dequeue() does not return the value of the entry at the front of the queue but instead is void.
+  -~Queue() does not delete all the entries in the Queue
+  -Enqueue adding to the back of the queue FAILED
+  -Dequeue removing the front element of queue FAILED
+  -peekFront() returning the front of a multi-element queue FAILED
+I think there is a bug in the Enqueue adding the element to the front of the list rather than the back of the queue
